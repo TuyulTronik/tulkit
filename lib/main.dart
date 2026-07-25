@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:tulkit/main_lib.dart';
 import 'package:tulkit/package_lib.dart';
 import 'package:tulkit/routes/app_pages.dart';
@@ -36,7 +37,14 @@ class MyApp extends StatelessWidget {
         if (child == null) {
           return SizedBox.shrink();
         }
-        return ResponsiveInitializers(child: child);
+        return ResponsiveInitializerSafe(
+          config: const ResponsiveConfig(
+            designWidth: 375,
+            designHeight: 812,
+            enableLogging: kDebugMode,
+          ),
+          child: child,
+        );
       },
     );
   }

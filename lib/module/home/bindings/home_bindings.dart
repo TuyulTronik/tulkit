@@ -1,6 +1,6 @@
 import 'package:tulkit/package_lib.dart';
 
-import '../controller/controller.dart';
+import '../controller/home_controller.dart';
 
 class HomeBindings extends Bindings {
   @override

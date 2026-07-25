@@ -83,8 +83,10 @@ class HomeController extends GetxController
     ),
   ];
  
-  final print = ["POM", "PDF PRINT"];
-  final utility = ["READER"];
+  // final print = ["POM", "PDF PRINT", "THERMAL"];
+  // final utility = ["READER"];
+  final print = ["POM", "POS", "PDF PRINT"];
+  final utility = ["READER", "AUDIO", "VIDEO", "AI"];
   @override
   void onInit() {
     super.onInit();

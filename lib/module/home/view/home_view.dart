@@ -1,7 +1,7 @@
 import 'package:tulkit/main_lib.dart';
 import 'package:tulkit/package_lib.dart';
 
-import '../controller/controller.dart';
+import '../controller/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
@@ -51,7 +51,6 @@ class HomeView extends GetView<HomeController> {
               ),
             ],
           ),
-
           TabBar(
             controller: controller.tabController,
             tabs: controller.tabs,
@@ -278,6 +277,7 @@ class HomeView extends GetView<HomeController> {
       mobileColumns: 4,
       crossAxisSpacing: 5,
       mainAxisSpacing: 5,
+      padding: EdgeInsets.all(10),
       children: List.generate(
         controller.print.length,
         (index) => Container(
@@ -288,6 +288,7 @@ class HomeView extends GetView<HomeController> {
           ),
           child: Text(
             controller.print[index],
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 15.sp, color: Colors.white),
           ),
         ),
@@ -300,6 +301,7 @@ class HomeView extends GetView<HomeController> {
       mobileColumns: 4,
       crossAxisSpacing: 5,
       mainAxisSpacing: 5,
+      padding: EdgeInsets.all(10),
       children: List.generate(
         controller.utility.length,
         (index) => Container(
@@ -310,6 +312,7 @@ class HomeView extends GetView<HomeController> {
           ),
           child: Text(
             controller.utility[index],
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 15.sp, color: Colors.white),
           ),
         ),

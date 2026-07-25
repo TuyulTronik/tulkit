@@ -1,10 +1,10 @@
 import 'package:tulkit/main_lib.dart';
-import 'package:tulkit/module/home/view/views.dart';
-import 'package:tulkit/module/splashscreen/view/view.dart';
+import 'package:tulkit/module/home/view/home_view.dart';
+import 'package:tulkit/module/splashscreen/view/splashscreen_view.dart';
 import 'package:tulkit/package_lib.dart';
 
-import '../module/home/bindings/bindings.dart';
-import '../module/splashscreen/bindings/bindings.dart';
+import '../module/home/bindings/home_bindings.dart';
+import '../module/splashscreen/bindings/splashscreen_bindings.dart';
 
 part 'app_routes.dart';
 
